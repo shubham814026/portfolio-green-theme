@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paritosh Baroliya - Quality Engineer Portfolio</title>
+    <title>Shubham Baroliya - Full-Stack Developer Portfolio</title>
+    <meta name="description"
+        content="Shubham Baroliya — Full-Stack Developer with MERN expertise, hackathon recognition, and AI/ML integration experience. Dataverse 2026 Winner.">
 
     <link rel="icon" type="image/jpeg" href="./asset/personal photo.jpeg">
 
@@ -453,12 +455,50 @@
         }
 
         .left-sidebar .sidebar-header .designation {
-            max-width: 130px;
-            text-align: right;
-            color: #fff;
-            font-size: 14px;
-            font-weight: 400;
+            max-width: none;
+            text-align: center;
+            color: var(--primary_color);
+            font-size: 15px;
+            font-weight: 500;
             line-height: 1.4;
+            white-space: nowrap;
+            border: 1px solid var(--primary_color);
+            padding: 6px 18px;
+            border-radius: 30px;
+            display: inline-block;
+            letter-spacing: 0.5px;
+        }
+
+        .left-sidebar .sidebar-header {
+            text-align: center;
+        }
+
+        /* Social icon tooltips */
+        .left-sidebar .social-profile li a {
+            position: relative;
+        }
+
+        .left-sidebar .social-profile li a::after {
+            content: attr(title);
+            position: absolute;
+            bottom: calc(100% + 8px);
+            left: 50%;
+            transform: translateX(-50%);
+            background: #404042;
+            color: #fff;
+            font-size: 11px;
+            padding: 4px 10px;
+            border-radius: 5px;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: .3s;
+            pointer-events: none;
+        }
+
+        .left-sidebar .social-profile li a:hover::after {
+            opacity: 1;
+            visibility: visible;
         }
 
         .left-sidebar h2 {
@@ -1354,7 +1394,7 @@
                     <li><a class="scroll-to" href="#portfolio"><i class="las la-grip-vertical"></i>
                             <span>Projects</span></a></li>
                     <li><a class="scroll-to" href="#certifications"><i class="las la-certificate"></i>
-                            <span>Certifications</span></a></li>
+                            <span>Achievements</span></a></li>
                     <li><a class="scroll-to" href="#contact"><i class="las la-envelope"></i> <span>Contact</span></a>
                     </li>
                 </ul>
@@ -1362,9 +1402,13 @@
             <div class="sidebar-social">
                 <p>Social</p>
                 <ul class="social-links d-flex align-items-center">
-                    <li><a href="https://linkedin.com/in/paritosh-baroliya" target="_blank"><i
+                    <li><a href="https://github.com/shubham814026" target="_blank"><i class="lab la-github"></i></a>
+                    </li>
+                    <li><a href="https://linkedin.com/in/shubham-baroliya-" target="_blank"><i
                                 class="lab la-linkedin-in"></i></a></li>
-                    <li><a href="mailto:paritosh7046@gmail.com"><i class="las la-envelope"></i></a></li>
+                    <li><a href="https://leetcode.com/u/baroliyaShubham/" target="_blank"><i
+                                class="las la-laptop-code"></i></a></li>
+                    <li><a href="mailto:shubham814026@gmail.com"><i class="las la-envelope"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -1378,27 +1422,31 @@
         <li><a class="scroll-to" href="#services"><span>Services</span> <i class="las la-stream"></i></a></li>
         <li><a class="scroll-to" href="#skills"><span>Skills</span> <i class="las la-shapes"></i></a></li>
         <li><a class="scroll-to" href="#portfolio"><span>Projects</span> <i class="las la-grip-vertical"></i></a></li>
-        <li><a class="scroll-to" href="#certifications"><span>Certifications</span> <i
-                    class="las la-certificate"></i></a></li>
+        <li><a class="scroll-to" href="#certifications"><span>Achievements</span> <i class="las la-certificate"></i></a>
+        </li>
         <li><a class="scroll-to" href="#contact"><span>Contact</span> <i class="las la-envelope"></i></a></li>
     </ul>
 
     <!-- Left Sidebar (desktop fixed) -->
     <div class="left-sidebar">
         <div class="sidebar-header d-flex align-items-center justify-content-between">
-            <span class="designation">Quality Engineer</span>
+            <span class="designation">Full-Stack Developer</span>
         </div>
-        <img class="me" src="./asset/personal photo.jpeg" alt="Paritosh Baroliya">
+        <img class="me" src="./asset/personal photo.jpeg" alt="Shubham Baroliya">
+        <h2 style="margin-bottom: 15px;">Shubham Baroliya</h2>
         <a href="./asset/resume-shubham.pdf" download class="theme-btn" style="width:100%;margin-bottom:20px;">
             <i class="las la-download"></i> Download Resume
         </a>
-        <h2 class="email">paritosh7046@gmail.com</h2>
-        <h2 class="address">Surendranagar, Gujarat, India</h2>
+        <h2 class="email">shubham814026@gmail.com</h2>
+        <h2 class="address">Vadodara, Gujarat, India</h2>
         <ul class="social-profile d-flex align-items-center flex-wrap justify-content-center">
-            <li><a href="https://linkedin.com/in/paritosh-baroliya" target="_blank"><i
+            <li><a href="https://github.com/shubham814026" target="_blank" title="GitHub"><i
+                        class="lab la-github"></i></a></li>
+            <li><a href="https://linkedin.com/in/shubham-baroliya-" target="_blank" title="LinkedIn"><i
                         class="lab la-linkedin-in"></i></a></li>
-            <li><a href="mailto:paritosh7046@gmail.com"><i class="las la-envelope"></i></a></li>
-            <li><a href="tel:+919664992010"><i class="las la-phone"></i></a></li>
+            <li><a href="https://leetcode.com/u/baroliyaShubham/" target="_blank" title="LeetCode"><i
+                        class="las la-laptop-code"></i></a></li>
+            <li><a href="mailto:shubham814026@gmail.com" title="Email"><i class="las la-envelope"></i></a></li>
         </ul>
     </div>
 
@@ -1409,16 +1457,21 @@
                 <!-- Sidebar (tablet/mobile) -->
                 <div class="left-sidebar">
                     <div class="sidebar-header d-flex align-items-center justify-content-between">
-                        <span class="designation">Quality Engineer</span>
+                        <span class="designation">Full-Stack Developer</span>
                     </div>
-                    <img class="me" src="./asset/personal photo.jpeg" alt="Paritosh Baroliya">
-                    <h2 class="email">paritosh7046@gmail.com</h2>
-                    <h2 class="address">Surendranagar, Gujarat, India</h2>
+                    <img class="me" src="./asset/personal photo.jpeg" alt="Shubham Baroliya">
+                    <h2 style="margin-bottom: 15px;">Shubham Baroliya</h2>
+                    <h2 class="email">shubham814026@gmail.com</h2>
+                    <h2 class="address">Vadodara, Gujarat, India</h2>
                     <ul class="social-profile d-flex align-items-center flex-wrap justify-content-center">
-                        <li><a href="https://linkedin.com/in/paritosh-baroliya" target="_blank"><i
+                        <li><a href="https://github.com/shubham814026" target="_blank" title="GitHub"><i
+                                    class="lab la-github"></i></a></li>
+                        <li><a href="https://linkedin.com/in/shubham-baroliya-" target="_blank" title="LinkedIn"><i
                                     class="lab la-linkedin-in"></i></a></li>
-                        <li><a href="mailto:paritosh7046@gmail.com"><i class="las la-envelope"></i></a></li>
-                        <li><a href="tel:+919664992010"><i class="las la-phone"></i></a></li>
+                        <li><a href="https://leetcode.com/u/baroliyaShubham/" target="_blank" title="LeetCode"><i
+                                    class="las la-laptop-code"></i></a></li>
+                        <li><a href="mailto:shubham814026@gmail.com" title="Email"><i class="las la-envelope"></i></a>
+                        </li>
                     </ul>
                 </div>
 
@@ -1430,12 +1483,12 @@
                                 <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
                                     <i class="las la-home"></i> Introduce
                                 </h4>
-                                <h1 class="scroll-animation" data-animation="fade_from_bottom">Hi, I'm <span>Paritosh
-                                        Baroliya</span>, Quality Engineer</h1>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">Hi, I'm <span>Shubham
+                                        Baroliya</span>, Full-Stack Developer</h1>
                             </div>
-                            <p class="scroll-animation" data-animation="fade_from_bottom">Manufacturing Quality Engineer
-                                with hands-on experience in product quality assurance, metrology, and statistical
-                                process control.</p>
+                            <p class="scroll-animation" data-animation="fade_from_bottom">Full-Stack Developer with
+                                proven MERN expertise and hackathon recognition. Building production-ready web
+                                applications with AI/ML integration, real-time systems, and cloud deployment.</p>
 
                             <a href="#portfolio" class="go-to-project-btn scroll-to scroll-animation"
                                 data-animation="rotate_up">
@@ -1453,12 +1506,12 @@
 
                             <div class="facts d-flex">
                                 <div class="left scroll-animation" data-animation="fade_from_left">
-                                    <h1>3+</h1>
-                                    <p>Years of <br>Experience</p>
+                                    <h1>120+</h1>
+                                    <p>Problems Solved<br>on LeetCode</p>
                                 </div>
                                 <div class="right scroll-animation" data-animation="fade_from_right">
-                                    <h1>SKP</h1>
-                                    <p>Currently at <br>SKP Bearing Industries</p>
+                                    <h1>4+</h1>
+                                    <p>Production<br>Projects Built</p>
                                 </div>
                             </div>
                         </div>
@@ -1473,16 +1526,16 @@
                                 <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
                                     <i class="lar la-user"></i> About
                                 </h4>
-                                <h1 class="scroll-animation" data-animation="fade_from_bottom">Driving quality
-                                    through<br>
-                                    data-driven <span>precision</span></h1>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">Building scalable
+                                    apps<br>
+                                    with <span>modern tech</span></h1>
                             </div>
-                            <p class="scroll-animation" data-animation="fade_from_bottom">Manufacturing Quality Engineer
-                                with hands-on experience in product quality assurance, metrology, laboratory data
-                                analysis, statistical process controls, root cause analysis, corrective and preventive
-                                actions, customer complaint resolution, and supplier quality development. I'm passionate
-                                about continuous improvement and dedicated to ensuring the highest standards of quality
-                                in every product.</p>
+                            <p class="scroll-animation" data-animation="fade_from_bottom">Full-Stack Developer with
+                                proven MERN expertise and hackathon recognition. I've built production-ready web
+                                applications leveraging backend APIs, real-time systems, and AI/ML integration including
+                                OCR and NLP. With experience in secure authentication, performance optimization, and
+                                cloud deployment, I focus on delivering reliable and impactful software. Dataverse 2026
+                                winner with hands-on experience in AWS, Docker, and payment gateway integration.</p>
                         </div>
                     </div>
                 </section>
@@ -1496,36 +1549,34 @@
                                     <i class="las la-briefcase"></i> Resume
                                 </h4>
                                 <h1 class="scroll-animation" data-animation="fade_from_bottom">Education &
-                                    <span>Experience</span></h1>
+                                    <span>Experience</span>
+                                </h1>
                             </div>
                             <div class="resume-timeline">
                                 <div class="item scroll-animation" data-animation="fade_from_right">
-                                    <span class="date">Jul 2022 - Present</span>
-                                    <h2>Quality Engineer</h2>
-                                    <p>SKP Bearing Industries Ltd.</p>
+                                    <span class="date">2023 — Present</span>
+                                    <h2>Full-Stack Developer</h2>
+                                    <p>Freelance & Project-Based</p>
                                     <ul>
-                                        <li>Monitor and analyze product and process quality performance</li>
-                                        <li>Lead problem-solving using 8D methodology, root cause analysis, containment
-                                            and corrective measurements</li>
-                                        <li>Conduct internal process audits using VDA, IATF, and GIS methodology</li>
-                                        <li>Support new product development with APQP and PPAP activities</li>
-                                        <li>Prepare quality documentation, inspection reports, and present results</li>
-                                        <li>Coordinate with production teams for process improvement and defect
-                                            reduction</li>
+                                        <li>Built production-ready MERN stack applications with REST APIs, JWT
+                                            authentication, and real-time WebSocket systems</li>
+                                        <li>Integrated AI/ML pipelines — OCR (Tesseract), NLP (spaCy), and LLM APIs for
+                                            intelligent data extraction</li>
+                                        <li>Deployed applications using AWS and Docker for consistent production
+                                            environments</li>
+                                        <li>Implemented payment gateway integrations and automated scheduling workflows
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="item scroll-animation" data-animation="fade_from_right">
-                                    <span class="date">May 2022 - Jul 2022</span>
-                                    <h2>Quality Intern</h2>
-                                    <p>Ram Engineer Works, Surendranagar</p>
+                                    <span class="date">2023 — 2027</span>
+                                    <h2>B.E. in Computer Science & Engineering</h2>
+                                    <p>The Maharaja Sayajirao University of Baroda</p>
                                     <ul>
-                                        <li>Supported quality checking and process quality control specifications</li>
+                                        <li>CGPA: 7.50 / 10.00</li>
+                                        <li>Active participant in hackathons and coding competitions</li>
+                                        <li>Focused on data structures, algorithms, and full-stack web development</li>
                                     </ul>
-                                </div>
-                                <div class="item scroll-animation" data-animation="fade_from_right">
-                                    <span class="date">2018 - 2022</span>
-                                    <h2>B.Tech in Mechanical Engineering</h2>
-                                    <p>C.U. Shah University</p>
                                 </div>
                             </div>
                         </div>
@@ -1541,26 +1592,30 @@
                                     <i class="las la-stream"></i> Services
                                 </h4>
                                 <h1 class="scroll-animation" data-animation="fade_from_bottom">My
-                                    <span>Specializations</span></h1>
+                                    <span>Specializations</span>
+                                </h1>
                             </div>
                             <div class="services-items">
                                 <div class="service-item scroll-animation" data-animation="fade_from_bottom">
-                                    <i class="las la-search"></i>
-                                    <h2>Quality Assurance</h2>
-                                    <p>Product & process quality monitoring, SPC, MSA, and metrology</p>
+                                    <i class="las la-code"></i>
+                                    <h2>Full-Stack Development</h2>
+                                    <p>MERN stack applications, REST APIs, WebSocket real-time systems, JWT
+                                        authentication & payment gateways</p>
                                     <span class="projects">Core Expertise</span>
                                 </div>
                                 <div class="service-item scroll-animation" data-animation="fade_from_bottom">
-                                    <i class="las la-clipboard-check"></i>
-                                    <h2>Auditing & Compliance</h2>
-                                    <p>Internal audits using VDA, IATF 16949, and ISO standards</p>
-                                    <span class="projects">Certified Auditor</span>
+                                    <i class="las la-brain"></i>
+                                    <h2>AI/ML Integration</h2>
+                                    <p>OCR (Tesseract), NLP (spaCy), LLM API integration, and intelligent data
+                                        extraction pipelines</p>
+                                    <span class="projects">Intelligent Systems</span>
                                 </div>
                                 <div class="service-item scroll-animation" data-animation="fade_from_bottom">
-                                    <i class="las la-chart-line"></i>
-                                    <h2>Root Cause Analysis</h2>
-                                    <p>8D methodology, corrective & preventive actions, continuous improvement</p>
-                                    <span class="projects">Problem Solving</span>
+                                    <i class="las la-cloud"></i>
+                                    <h2>Cloud & DevOps</h2>
+                                    <p>AWS deployment, Docker containerization, CI/CD pipelines, and production
+                                        environment management</p>
+                                    <span class="projects">Infrastructure</span>
                                 </div>
                             </div>
                         </div>
@@ -1576,61 +1631,116 @@
                                     <i class="las la-shapes"></i> My Skills
                                 </h4>
                                 <h1 class="scroll-animation" data-animation="fade_from_bottom">My
-                                    <span>Advantages</span></h1>
+                                    <span>Advantages</span>
+                                </h1>
                             </div>
                             <div class="row skills text-center">
                                 <div class="col-md-3 scroll-animation" data-animation="fade_from_left">
                                     <div class="skill">
                                         <div class="skill-inner">
-                                            <div class="skill-icon"><i class="las la-chart-bar"></i></div>
-                                            <h1 class="percent">SPC</h1>
+                                            <div class="skill-icon"><i class="lab la-js-square"></i></div>
+                                            <h1 class="percent">JavaScript</h1>
                                         </div>
-                                        <p class="name">Statistical Process Control</p>
+                                        <p class="name">Core Language</p>
                                     </div>
                                 </div>
                                 <div class="col-md-3 scroll-animation" data-animation="fade_from_bottom">
                                     <div class="skill">
                                         <div class="skill-inner">
-                                            <div class="skill-icon"><i class="las la-ruler-combined"></i></div>
-                                            <h1 class="percent">MSA</h1>
+                                            <div class="skill-icon"><i class="lab la-python"></i></div>
+                                            <h1 class="percent">Python</h1>
                                         </div>
-                                        <p class="name">Measurement System Analysis</p>
+                                        <p class="name">AI/ML & Scripting</p>
                                     </div>
                                 </div>
                                 <div class="col-md-3 scroll-animation" data-animation="fade_from_top">
                                     <div class="skill">
                                         <div class="skill-inner">
-                                            <div class="skill-icon"><i class="las la-tasks"></i></div>
-                                            <h1 class="percent">APQP</h1>
+                                            <div class="skill-icon"><i class="las la-code"></i></div>
+                                            <h1 class="percent">C++</h1>
                                         </div>
-                                        <p class="name">Advanced Product Quality Planning</p>
+                                        <p class="name">DSA & Problem Solving</p>
                                     </div>
                                 </div>
                                 <div class="col-md-3 scroll-animation" data-animation="fade_from_right">
                                     <div class="skill">
                                         <div class="skill-inner">
-                                            <div class="skill-icon"><i class="las la-file-alt"></i></div>
-                                            <h1 class="percent">PPAP</h1>
+                                            <div class="skill-icon"><i class="las la-table"></i></div>
+                                            <h1 class="percent">SQL</h1>
                                         </div>
-                                        <p class="name">Production Part Approval Process</p>
+                                        <p class="name">Database Queries</p>
                                     </div>
                                 </div>
                                 <div class="col-md-3 scroll-animation" data-animation="fade_from_left">
                                     <div class="skill">
                                         <div class="skill-inner">
-                                            <div class="skill-icon"><i class="las la-bug"></i></div>
-                                            <h1 class="percent">8D</h1>
+                                            <div class="skill-icon"><i class="lab la-react"></i></div>
+                                            <h1 class="percent">React</h1>
                                         </div>
-                                        <p class="name">8D Problem Solving</p>
+                                        <p class="name">Frontend Development</p>
                                     </div>
                                 </div>
                                 <div class="col-md-3 scroll-animation" data-animation="fade_from_bottom">
                                     <div class="skill">
                                         <div class="skill-inner">
-                                            <div class="skill-icon"><i class="las la-industry"></i></div>
-                                            <h1 class="percent">IATF</h1>
+                                            <div class="skill-icon"><i class="lab la-node-js"></i></div>
+                                            <h1 class="percent">Node.js</h1>
                                         </div>
-                                        <p class="name">IATF 16949 Standards</p>
+                                        <p class="name">Backend Runtime</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 scroll-animation" data-animation="fade_from_top">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <div class="skill-icon"><i class="las la-server"></i></div>
+                                            <h1 class="percent">Express</h1>
+                                        </div>
+                                        <p class="name">REST APIs & JWT Auth</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 scroll-animation" data-animation="fade_from_right">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <div class="skill-icon"><i class="las la-database"></i></div>
+                                            <h1 class="percent">MongoDB</h1>
+                                        </div>
+                                        <p class="name">NoSQL Database</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 scroll-animation" data-animation="fade_from_left">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <div class="skill-icon"><i class="lab la-aws"></i></div>
+                                            <h1 class="percent">AWS</h1>
+                                        </div>
+                                        <p class="name">Cloud Deployment</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 scroll-animation" data-animation="fade_from_bottom">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <div class="skill-icon"><i class="lab la-docker"></i></div>
+                                            <h1 class="percent">Docker</h1>
+                                        </div>
+                                        <p class="name">Containerization</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 scroll-animation" data-animation="fade_from_top">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <div class="skill-icon"><i class="las la-brain"></i></div>
+                                            <h1 class="percent">AI/ML</h1>
+                                        </div>
+                                        <p class="name">OCR, NLP & LLM APIs</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 scroll-animation" data-animation="fade_from_right">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <div class="skill-icon"><i class="lab la-git-alt"></i></div>
+                                            <h1 class="percent">Git</h1>
+                                        </div>
+                                        <p class="name">Version Control & Postman</p>
                                     </div>
                                 </div>
                             </div>
@@ -1646,49 +1756,169 @@
                                 <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
                                     <i class="las la-grip-vertical"></i> Portfolio
                                 </h4>
-                                <h1 class="scroll-animation" data-animation="fade_from_bottom">Key <span>Projects</span>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">Featured
+                                    <span>Projects</span>
                                 </h1>
                             </div>
-                            <div class="row portfolio-items">
+
+                            <!-- Group 1: Full-Stack & Freelance -->
+                            <div class="scroll-animation" data-animation="fade_from_bottom"
+                                style="margin-top: 40px; margin-bottom: 25px;">
+                                <h2
+                                    style="font-size: 24px; font-weight: 300; color: #fff; border-left: 2px solid var(--primary_color); padding-left: 15px; margin: 0;">
+                                    Full-Stack & Freelance</h2>
+                            </div>
+
+                            <div class="row portfolio-items" style="margin-bottom: 40px;">
                                 <div class="col-md-12 scroll-animation" data-animation="fade_from_bottom">
                                     <div class="portfolio-item">
                                         <div class="portfolio-item-inner">
-                                            <h3>Quality Performance Improvement at SKP</h3>
-                                            <p>Led quality improvement initiatives resulting in reduced defect rates
-                                                through SPC implementation and root cause analysis using 8D methodology.
-                                            </p>
+                                            <h3>MisinfoGuard — Fake Information Detection System</h3>
+                                            <p>Engineered a full-stack MERN platform that analyzes text, images, and
+                                                PDFs for misinformation with 90% accuracy. Evaluates content credibility
+                                                using external verification sources and confidence scoring logic.
+                                                Integrated OCR (Tesseract) and NLP (spaCy) pipelines for unstructured
+                                                data extraction, with containerized deployment using Docker.</p>
                                             <div class="project-tags">
-                                                <span>SPC</span><span>8D</span><span>Root Cause
-                                                    Analysis</span><span>Quality Improvement</span>
+                                                <span>MERN
+                                                    Stack</span><span>OCR</span><span>NLP</span><span>Docker</span><span>90%
+                                                    Accuracy</span>
                                             </div>
                                         </div>
-                                        <h2><a href="#">Process Quality Optimization</a></h2>
+                                        <h2><a href="#">AI-Powered Misinformation Detection</a></h2>
                                     </div>
                                 </div>
                                 <div class="col-md-6 scroll-animation" data-animation="fade_from_left">
                                     <div class="portfolio-item">
                                         <div class="portfolio-item-inner">
-                                            <h3>Internal Audit Program</h3>
-                                            <p>Conducted internal process audits using VDA and IATF standards,
-                                                identifying improvement opportunities and ensuring compliance.</p>
+                                            <h3>EdinvoSync Platform</h3>
+                                            <p>Engineered invoice data extraction using OCR with regex pattern matching.
+                                                Developed backup Azure Invoice Model integration for enhanced accuracy.
+                                                Built middleware APIs for invoice processing workflows and data
+                                                synchronization.</p>
                                             <div class="project-tags">
-                                                <span>VDA</span><span>IATF 16949</span><span>Auditing</span>
+                                                <span>OCR</span><span>Azure</span><span>REST
+                                                    APIs</span><span>Node.js</span>
                                             </div>
                                         </div>
-                                        <h2><a href="#">Compliance & Auditing</a></h2>
+                                        <h2><a href="#">Invoice Processing Platform</a></h2>
                                     </div>
                                 </div>
                                 <div class="col-md-6 scroll-animation" data-animation="fade_from_right">
                                     <div class="portfolio-item">
                                         <div class="portfolio-item-inner">
-                                            <h3>New Product Development Support</h3>
-                                            <p>Supported APQP and PPAP activities for new product introductions,
-                                                ensuring quality gates are met at every stage.</p>
+                                            <h3>BidForge — Real-Time Auction Platform</h3>
+                                            <p>Developed a real-time bidding system supporting concurrent auctions and
+                                                live messaging using WebSockets. Secured user sessions and implemented
+                                                notification workflows with transaction integrity.</p>
                                             <div class="project-tags">
-                                                <span>APQP</span><span>PPAP</span><span>NPD</span>
+                                                <span>WebSockets</span><span>Real-Time</span><span>MERN</span><span>Authentication</span>
                                             </div>
                                         </div>
-                                        <h2><a href="#">APQP & PPAP Management</a></h2>
+                                        <h2><a href="#">Real-Time Bidding System</a></h2>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 scroll-animation" data-animation="fade_from_left">
+                                    <div class="portfolio-item">
+                                        <div class="portfolio-item-inner">
+                                            <h3>PocketFlow — Budget & Expense Tracker</h3>
+                                            <p>Built a full-stack expense management app with recurring transactions,
+                                                alerts, and analytics. Enabled automated receipt categorization via OCR
+                                                and NLP. Implemented JWT-based authentication and scheduled reporting
+                                                workflows.</p>
+                                            <div class="project-tags">
+                                                <span>React</span><span>Node.js</span><span>JWT</span><span>OCR</span>
+                                            </div>
+                                        </div>
+                                        <h2><a href="#">Automated Expense Management</a></h2>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 scroll-animation" data-animation="fade_from_right">
+                                    <div class="portfolio-item">
+                                        <div class="portfolio-item-inner">
+                                            <h3>TapLog.in — Collaborative Side Project</h3>
+                                            <p>Contributing to taplog.in — a web-based platform project.
+                                                Providing development support and feature implementation as part of
+                                                a collaborative team effort.</p>
+                                            <div class="project-tags">
+                                                <span>Web Dev</span><span>Collaboration</span><span>JavaScript</span>
+                                            </div>
+                                        </div>
+                                        <h2><a href="https://taplog.in" target="_blank">taplog.in</a></h2>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Group 2: Hackathon Projects -->
+                            <div class="scroll-animation" data-animation="fade_from_bottom"
+                                style="margin-top: 50px; margin-bottom: 25px;">
+                                <h2
+                                    style="font-size: 24px; font-weight: 300; color: #fff; border-left: 2px solid var(--primary_color); padding-left: 15px; margin: 0;">
+                                    Hackathon Projects</h2>
+                            </div>
+
+                            <div class="row portfolio-items">
+                                <div class="col-md-12 scroll-animation" data-animation="fade_from_bottom">
+                                    <div class="portfolio-item">
+                                        <div class="portfolio-item-inner">
+                                            <h3>Safe Landing Drift Detection Model (Dataverse 2026 Winner)</h3>
+                                            <p>Developed a robust data drift detection model for banking datasets
+                                                containing 22M+ records. Focused on identifying feature distribution
+                                                shifts over time to prevent model performance degradation and ensure
+                                                reliability and safety in production environments.</p>
+                                            <div class="project-tags">
+                                                <span>react18</span><span>Python</span><span>Data
+                                                    Drift</span><span>Machine Learning</span><span>Dataverse 2026
+                                                    Winner</span>
+                                            </div>
+                                        </div>
+                                        <h2><a href="#">Safe Landing Drifting Model</a></h2>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 scroll-animation" data-animation="fade_from_left">
+                                    <div class="portfolio-item">
+                                        <div class="portfolio-item-inner">
+                                            <h3>FleetFlow (Odoo Hackathon)</h3>
+                                            <p>Designed and built an advanced vehicle tracking and logistics management
+                                                module to monitor fleet movements, tracking, fuel consumption, driver
+                                                behavior, and maintenance logs in real-time, integrating seamlessly with
+                                                ERP workflows.</p>
+                                            <div class="project-tags">
+                                                <span>Odoo ERP</span><span>Fleet Tracking</span><span>Logistics</span>
+                                            </div>
+                                        </div>
+                                        <h2><a href="#">FleetFlow Tracking System</a></h2>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 scroll-animation" data-animation="fade_from_right">
+                                    <div class="portfolio-item">
+                                        <div class="portfolio-item-inner">
+                                            <h3>Product Lifecycle Management System (Odoo Hackathon)</h3>
+                                            <p>Created a collaborative system streamlining product versioning,
+                                                engineering change orders (ECOs), and bill of materials (BOM)
+                                                management. Designed to enhance communication between engineering and
+                                                manufacturing teams.</p>
+                                            <div class="project-tags">
+                                                <span>Odoo PLM</span><span>ERP</span><span>Version Control</span>
+                                            </div>
+                                        </div>
+                                        <h2><a href="#">Odoo PLM Module</a></h2>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 scroll-animation" data-animation="fade_from_bottom">
+                                    <div class="portfolio-item">
+                                        <div class="portfolio-item-inner">
+                                            <h3>Hire-Bright-Suite (HackThrone 2025 at MSU College)</h3>
+                                            <p>Built an AI-driven recruitment portal for automated parsing, scanning,
+                                                and ranking of resumes. Leveraged natural language processing to extract
+                                                key skills and score candidates against job descriptions, streamlining
+                                                the hiring process.</p>
+                                            <div class="project-tags">
+                                                <span>Python</span><span>NLP</span><span>AI Screening</span><span>MSU
+                                                    HackThrone 2025</span>
+                                            </div>
+                                        </div>
+                                        <h2><a href="#">Resume Ranker & Screener</a></h2>
                                     </div>
                                 </div>
                             </div>
@@ -1696,37 +1926,44 @@
                     </div>
                 </section>
 
-                <!-- CERTIFICATIONS -->
+                <!-- ACHIEVEMENTS -->
                 <section class="testimonial-area page-section scroll-to-page" id="certifications">
                     <div class="custom-container">
                         <div class="testimonial-content content-width">
                             <div class="section-header">
                                 <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
-                                    <i class="las la-certificate"></i> Certifications
+                                    <i class="las la-certificate"></i> Achievements
                                 </h4>
-                                <h1 class="scroll-animation" data-animation="fade_from_bottom">Training &
-                                    <span>Certifications</span></h1>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">Hackathons &
+                                    <span>Achievements</span>
+                                </h1>
                             </div>
                             <div class="cert-grid scroll-animation" data-animation="fade_from_bottom">
                                 <div class="cert-item">
+                                    <i class="las la-trophy"></i>
+                                    <h3>Dataverse 2026 — Winner</h3>
+                                    <p>Developed data drift detection model for banking datasets (22M+ records),
+                                        identifying distribution shifts and ensuring model reliability in production</p>
+                                </div>
+                                <div class="cert-item">
                                     <i class="las la-award"></i>
-                                    <h3>VDA Internal Auditor</h3>
-                                    <p>Certified VDA process auditor for automotive quality systems</p>
+                                    <h3>Odoo Hackathon</h3>
+                                    <p>Built Product Lifecycle Management (PLM) system streamlining versioning and
+                                        collaboration workflows</p>
                                 </div>
                                 <div class="cert-item">
-                                    <i class="las la-certificate"></i>
-                                    <h3>IATF 16949</h3>
-                                    <p>Automotive quality management system standard certification</p>
+                                    <i class="las la-medal"></i>
+                                    <h3>HackThrone — MSU College</h3>
+                                    <p>Developed AI-powered resume screening system (Hire-Bright-Suite) for automated
+                                        candidate shortlisting and analysis</p>
                                 </div>
                                 <div class="cert-item">
-                                    <i class="las la-cogs"></i>
-                                    <h3>Lean Manufacturing</h3>
-                                    <p>Lean principles, Six Sigma, and Kaizen methodologies</p>
-                                </div>
-                                <div class="cert-item">
-                                    <i class="las la-tools"></i>
-                                    <h3>Core Tools</h3>
-                                    <p>SPC, MSA, APQP, PPAP, FMEA, and 8D methodology</p>
+                                    <i class="las la-laptop-code"></i>
+                                    <h3>LeetCode — 120+ Problems</h3>
+                                    <p>
+                                        <a href="https://leetcode.com/u/baroliyaShubham/" target="_blank"
+                                            style="color:var(--primary_color);">View Profile →</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -1742,23 +1979,24 @@
                                     <i class="las la-envelope"></i> Contact
                                 </h4>
                                 <h1 class="scroll-animation" data-animation="fade_from_bottom">Let's Work
-                                    <span>Together!</span></h1>
+                                    <span>Together!</span>
+                                </h1>
                             </div>
                             <div class="contact-info-cards scroll-animation" data-animation="fade_from_bottom">
                                 <div class="contact-info-card">
                                     <i class="las la-envelope"></i>
                                     <h4>Email</h4>
-                                    <p>paritosh7046@gmail.com</p>
+                                    <p>shubham814026@gmail.com</p>
                                 </div>
                                 <div class="contact-info-card">
                                     <i class="las la-phone"></i>
                                     <h4>Phone</h4>
-                                    <p>+91 9664992010</p>
+                                    <p>+91 9106565193</p>
                                 </div>
                                 <div class="contact-info-card">
                                     <i class="las la-map-marker"></i>
                                     <h4>Location</h4>
-                                    <p>Surendranagar, Gujarat, India</p>
+                                    <p>Vadodara, Gujarat, India</p>
                                 </div>
                             </div>
                         </div>
