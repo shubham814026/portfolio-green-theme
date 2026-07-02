@@ -857,6 +857,75 @@
             border-color: var(--primary_color);
         }
 
+        /* Project Previews */
+        .portfolio-preview-link {
+            display: block;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .portfolio-preview-image-wrapper {
+            position: relative;
+            width: 100%;
+            height: 180px;
+            overflow: hidden;
+            background: #111;
+        }
+
+        .portfolio-preview-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top center;
+            transition: transform 0.5s ease;
+        }
+
+        .portfolio-preview-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .preview-badge {
+            background: var(--primary_color);
+            color: #000;
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            box-shadow: 0 4px 15px rgba(40, 233, 140, 0.4);
+            transform: translateY(10px);
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-preview-link:hover .portfolio-preview-image {
+            transform: scale(1.05);
+        }
+
+        .portfolio-preview-link:hover .portfolio-preview-overlay {
+            opacity: 1;
+        }
+
+        .portfolio-preview-link:hover .preview-badge {
+            transform: translateY(0);
+        }
+
         .portfolio-item-inner h3 {
             color: #fff;
             font-weight: 300;
@@ -1782,7 +1851,10 @@
                                                     Accuracy</span>
                                             </div>
                                         </div>
-                                        <h2><a href="#">AI-Powered Misinformation Detection</a></h2>
+                                        <h2><a href="https://github.com/shubham814026/misinfoguard"
+                                                target="_blank">AI-Powered Misinformation Detection <i
+                                                    class="las la-external-link-alt"
+                                                    style="font-size: 16px; margin-left: 5px;"></i></a></h2>
                                     </div>
                                 </div>
                                 <div class="col-md-6 scroll-animation" data-animation="fade_from_left">
@@ -1798,7 +1870,9 @@
                                                     APIs</span><span>Node.js</span>
                                             </div>
                                         </div>
-                                        <h2><a href="#">Invoice Processing Platform</a></h2>
+                                        <h2><a href="https://github.com/shubham814026" target="_blank">Invoice
+                                                Processing Platform <i class="las la-external-link-alt"
+                                                    style="font-size: 16px; margin-left: 5px;"></i></a></h2>
                                     </div>
                                 </div>
                                 <div class="col-md-6 scroll-animation" data-animation="fade_from_right">
@@ -1812,7 +1886,10 @@
                                                 <span>WebSockets</span><span>Real-Time</span><span>MERN</span><span>Authentication</span>
                                             </div>
                                         </div>
-                                        <h2><a href="#">Real-Time Bidding System</a></h2>
+                                        <h2><a href="https://github.com/shubham814026/bidForge"
+                                                target="_blank">Real-Time Bidding System <i
+                                                    class="las la-external-link-alt"
+                                                    style="font-size: 16px; margin-left: 5px;"></i></a></h2>
                                     </div>
                                 </div>
                                 <div class="col-md-6 scroll-animation" data-animation="fade_from_left">
@@ -1827,7 +1904,10 @@
                                                 <span>React</span><span>Node.js</span><span>JWT</span><span>OCR</span>
                                             </div>
                                         </div>
-                                        <h2><a href="#">Automated Expense Management</a></h2>
+                                        <h2><a href="https://github.com/shubham814026/pocketflow2.0"
+                                                target="_blank">Automated Expense Management <i
+                                                    class="las la-external-link-alt"
+                                                    style="font-size: 16px; margin-left: 5px;"></i></a></h2>
                                     </div>
                                 </div>
                                 <div class="col-md-6 scroll-animation" data-animation="fade_from_right">
@@ -1841,7 +1921,9 @@
                                                 <span>Web Dev</span><span>Collaboration</span><span>Nextjs</span>
                                             </div>
                                         </div>
-                                        <h2><a href="https://taplog.in" target="_blank">taplog.in</a></h2>
+                                        <h2><a href="https://taplog.in" target="_blank">taplog.in <i
+                                                    class="las la-external-link-alt"
+                                                    style="font-size: 16px; margin-left: 5px;"></i></a></h2>
                                     </div>
                                 </div>
                             </div>
@@ -1869,12 +1951,26 @@
                                                     Winner</span>
                                             </div>
                                         </div>
-                                        <h2><a href="#">Safe Landing Drifting Model</a></h2>
+                                        <h2><a href="https://github.com/shubham814026/new-safe-lending-"
+                                                target="_blank">Safe Landing Drifting Model <i
+                                                    class="las la-external-link-alt"
+                                                    style="font-size: 16px; margin-left: 5px;"></i></a></h2>
                                     </div>
                                 </div>
                                 <div class="col-md-6 scroll-animation" data-animation="fade_from_left">
                                     <div class="portfolio-item">
                                         <div class="portfolio-item-inner">
+                                            <a href="https://fleet-flow-mu-six.vercel.app" target="_blank"
+                                                class="portfolio-preview-link">
+                                                <div class="portfolio-preview-image-wrapper">
+                                                    <img src="./asset/fleetflow_preview.png" alt="FleetFlow Preview"
+                                                        class="portfolio-preview-image">
+                                                    <div class="portfolio-preview-overlay">
+                                                        <span class="preview-badge"><i
+                                                                class="las la-external-link-alt"></i> Live Demo</span>
+                                                    </div>
+                                                </div>
+                                            </a>
                                             <h3>FleetFlow (Odoo Hackathon)</h3>
                                             <p>Designed and built an advanced vehicle tracking and logistics management
                                                 module to monitor fleet movements, tracking, fuel consumption, driver
@@ -1884,12 +1980,25 @@
                                                 <span>Odoo ERP</span><span>Fleet Tracking</span><span>Logistics</span>
                                             </div>
                                         </div>
-                                        <h2><a href="#">FleetFlow Tracking System</a></h2>
+                                        <h2><a href="https://fleet-flow-mu-six.vercel.app" target="_blank">FleetFlow
+                                                Tracking System <i class="las la-external-link-alt"
+                                                    style="font-size: 16px; margin-left: 5px;"></i></a></h2>
                                     </div>
                                 </div>
                                 <div class="col-md-6 scroll-animation" data-animation="fade_from_right">
                                     <div class="portfolio-item">
                                         <div class="portfolio-item-inner">
+                                            <a href="https://plm-main.vercel.app" target="_blank"
+                                                class="portfolio-preview-link">
+                                                <div class="portfolio-preview-image-wrapper">
+                                                    <img src="./asset/plm_preview.png" alt="PLM Preview"
+                                                        class="portfolio-preview-image">
+                                                    <div class="portfolio-preview-overlay">
+                                                        <span class="preview-badge"><i
+                                                                class="las la-external-link-alt"></i> Live Demo</span>
+                                                    </div>
+                                                </div>
+                                            </a>
                                             <h3>Product Lifecycle Management System (Odoo Hackathon)</h3>
                                             <p>Created a collaborative system streamlining product versioning,
                                                 engineering change orders (ECOs), and bill of materials (BOM)
@@ -1899,7 +2008,9 @@
                                                 <span>Odoo PLM</span><span>ERP</span><span>Version Control</span>
                                             </div>
                                         </div>
-                                        <h2><a href="#">Odoo PLM Module</a></h2>
+                                        <h2><a href="https://plm-main.vercel.app" target="_blank">Odoo PLM Module <i
+                                                    class="las la-external-link-alt"
+                                                    style="font-size: 16px; margin-left: 5px;"></i></a></h2>
                                     </div>
                                 </div>
                                 <div class="col-md-12 scroll-animation" data-animation="fade_from_bottom">
@@ -1915,7 +2026,9 @@
                                                     HackThrone 2025</span>
                                             </div>
                                         </div>
-                                        <h2><a href="#">Resume Ranker & Screener</a></h2>
+                                        <h2><a href="https://github.com/shubham814026" target="_blank">Resume Ranker &
+                                                Screener <i class="las la-external-link-alt"
+                                                    style="font-size: 16px; margin-left: 5px;"></i></a></h2>
                                     </div>
                                 </div>
                             </div>
