@@ -955,6 +955,53 @@
             color: var(--primary_color);
         }
 
+        /* Tech Stack Dropdown Details */
+        .tech-stack-details {
+            margin-top: 15px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 10px 15px;
+            transition: all 0.3s ease;
+        }
+
+        .tech-stack-details[open] {
+            border-color: rgba(40, 233, 140, 0.3);
+            background: rgba(40, 233, 140, 0.02);
+        }
+
+        .tech-stack-summary {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 500;
+            color: #fff;
+            user-select: none;
+        }
+
+        .tech-stack-summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .tech-stack-summary i {
+            font-size: 14px;
+            color: var(--primary_color);
+            transition: transform 0.3s ease;
+        }
+
+        .tech-stack-details[open] .tech-stack-summary i {
+            transform: rotate(180deg);
+        }
+
+        .tech-stack-details .project-tags {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
         .portfolio-items .portfolio-item h2 {
             font-size: 24px;
             font-weight: 300;
@@ -1845,11 +1892,15 @@
                                                 using external verification sources and confidence scoring logic.
                                                 Integrated OCR (Tesseract) and NLP (spaCy) pipelines for unstructured
                                                 data extraction, with containerized deployment using Docker.</p>
-                                            <!-- <div class="project-tags">
-                                                <span>MERN
-                                                    Stack</span><span>OCR</span><span>NLP</span><span>Docker</span><span>90%
-                                                    Accuracy</span>
-                                            </div> -->
+                                            <details class="tech-stack-details">
+                                                <summary class="tech-stack-summary">
+                                                    <span>View Tech Stack</span>
+                                                    <i class="las la-angle-down"></i>
+                                                </summary>
+                                                <div class="project-tags">
+                                                    <span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Python</span><span>FastAPI</span><span>Tesseract OCR</span><span>SpaCy NLP</span><span>Docker</span><span>Google Custom Search API</span><span>Google Fact Check Tools API</span>
+                                                </div>
+                                            </details>
                                         </div>
                                         <h2><a href="https://github.com/shubham814026/misinfoguard"
                                                 target="_blank">AI-Powered Misinformation Detection <i
@@ -1865,10 +1916,15 @@
                                                 Developed backup Azure Invoice Model integration for enhanced accuracy.
                                                 Built middleware APIs for invoice processing workflows and data
                                                 synchronization.</p>
-                                            <!-- <div class="project-tags">
-                                                <span>OCR</span><span>Azure</span><span>REST
-                                                    APIs</span><span>Node.js</span>
-                                            </div> -->
+                                            <!-- <details class="tech-stack-details">
+                                                <summary class="tech-stack-summary">
+                                                    <span>View Tech Stack</span>
+                                                    <i class="las la-angle-down"></i>
+                                                </summary>
+                                                <div class="project-tags">
+                                                    <span>OCR</span><span>Azure</span><span>REST APIs</span><span>Node.js</span>
+                                                </div>
+                                            </details> -->
                                         </div>
                                         <h2><a href="https://github.com/shubham814026" target="_blank">Invoice
                                                 Processing Platform <i class="las la-external-link-alt"
@@ -1882,9 +1938,15 @@
                                             <p>Developed a real-time bidding system supporting concurrent auctions and
                                                 live messaging using WebSockets. Secured user sessions and implemented
                                                 notification workflows with transaction integrity.</p>
-                                            <!-- <div class="project-tags">
-                                                <span>WebSockets</span><span>Real-Time</span><span>MERN</span><span>Authentication</span>
-                                            </div> -->
+                                            <details class="tech-stack-details">
+                                                <summary class="tech-stack-summary">
+                                                    <span>View Tech Stack</span>
+                                                    <i class="las la-angle-down"></i>
+                                                </summary>
+                                                <div class="project-tags">
+                                                    <span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Socket.io</span><span>JWT</span><span>Bootstrap</span><span>Framer Motion</span>
+                                                </div>
+                                            </details>
                                         </div>
                                         <h2><a href="https://github.com/shubham814026/bidForge"
                                                 target="_blank">Real-Time Bidding System <i
@@ -1900,9 +1962,15 @@
                                                 alerts, and analytics. Enabled automated receipt categorization via OCR
                                                 and NLP. Implemented JWT-based authentication and scheduled reporting
                                                 workflows.</p>
-                                            <!-- <div class="project-tags">
-                                                <span>React</span><span>Node.js</span><span>JWT</span><span>OCR</span>
-                                            </div> -->
+                                            <details class="tech-stack-details">
+                                                <summary class="tech-stack-summary">
+                                                    <span>View Tech Stack</span>
+                                                    <i class="las la-angle-down"></i>
+                                                </summary>
+                                                <div class="project-tags">
+                                                    <span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>JWT</span><span>Tailwind CSS</span><span>Python Flask</span><span>Tesseract OCR</span><span>spaCy</span><span>OpenCV</span>
+                                                </div>
+                                            </details>
                                         </div>
                                         <h2><a href="https://github.com/shubham814026/pocketflow2.0"
                                                 target="_blank">Automated Expense Management <i
@@ -1917,9 +1985,15 @@
                                             <p>Contributing to taplog.in — a web-based platform project.
                                                 Providing development support and feature implementation as part of
                                                 a collaborative team effort.</p>
-                                            <!-- <div class="project-tags">
-                                                <span>Web Dev</span><span>Collaboration</span><span>Nextjs</span>
-                                            </div> -->
+                                            <!-- <details class="tech-stack-details">
+                                                <summary class="tech-stack-summary">
+                                                    <span>View Tech Stack</span>
+                                                    <i class="las la-angle-down"></i>
+                                                </summary>
+                                                <div class="project-tags">
+                                                    <span>Web Dev</span><span>Collaboration</span><span>Nextjs</span>
+                                                </div>
+                                            </details> -->
                                         </div>
                                         <h2><a href="https://taplog.in" target="_blank">taplog.in <i
                                                     class="las la-external-link-alt"
@@ -1945,11 +2019,15 @@
                                                 containing 22M+ records. Focused on identifying feature distribution
                                                 shifts over time to prevent model performance degradation and ensure
                                                 reliability and safety in production environments.</p>
-                                            <!-- <div class="project-tags">
-                                                <span>react18</span><span>Python</span><span>Data
-                                                    Drift</span><span>Machine Learning</span><span>Dataverse 2026
-                                                    Winner</span>
-                                            </div> -->
+                                            <!-- <details class="tech-stack-details">
+                                                <summary class="tech-stack-summary">
+                                                    <span>View Tech Stack</span>
+                                                    <i class="las la-angle-down"></i>
+                                                </summary>
+                                                <div class="project-tags">
+                                                    <span>react18</span><span>Python</span><span>Data Drift</span><span>Machine Learning</span><span>Dataverse 2026 Winner</span>
+                                                </div>
+                                            </details> -->
                                         </div>
                                         <h2><a href="https://github.com/shubham814026/new-safe-lending-"
                                                 target="_blank">Safe Landing Drifting Model <i
@@ -1976,9 +2054,15 @@
                                                 module to monitor fleet movements, tracking, fuel consumption, driver
                                                 behavior, and maintenance logs in real-time, integrating seamlessly with
                                                 ERP workflows.</p>
-                                            <!-- <div class="project-tags">
-                                                <span>Odoo ERP</span><span>Fleet Tracking</span><span>Logistics</span>
-                                            </div> -->
+                                            <details class="tech-stack-details">
+                                                <summary class="tech-stack-summary">
+                                                    <span>View Tech Stack</span>
+                                                    <i class="las la-angle-down"></i>
+                                                </summary>
+                                                <div class="project-tags">
+                                                    <span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>JWT</span><span>Tailwind CSS</span><span>React Router</span>
+                                                </div>
+                                            </details>
                                         </div>
                                         <h2><a href="https://fleet-flow-mu-six.vercel.app" target="_blank">FleetFlow
                                                 Tracking System <i class="las la-external-link-alt"
@@ -2004,9 +2088,15 @@
                                                 engineering change orders (ECOs), and bill of materials (BOM)
                                                 management. Designed to enhance communication between engineering and
                                                 manufacturing teams.</p>
-                                            <!-- <div class="project-tags">
-                                                <span>Odoo PLM</span><span>ERP</span><span>Version Control</span>
-                                            </div> -->
+                                            <details class="tech-stack-details">
+                                                <summary class="tech-stack-summary">
+                                                    <span>View Tech Stack</span>
+                                                    <i class="las la-angle-down"></i>
+                                                </summary>
+                                                <div class="project-tags">
+                                                    <span>React</span><span>Node.js</span><span>Express</span><span>PostgreSQL</span><span>Socket.io</span><span>JWT</span><span>Zustand</span><span>Tailwind CSS</span>
+                                                </div>
+                                            </details>
                                         </div>
                                         <h2><a href="https://plm-main.vercel.app" target="_blank">Odoo PLM Module <i
                                                     class="las la-external-link-alt"
@@ -2021,10 +2111,15 @@
                                                 and ranking of resumes. Leveraged natural language processing to extract
                                                 key skills and score candidates against job descriptions, streamlining
                                                 the hiring process.</p>
-                                            <!-- <div class="project-tags">
-                                                <span>Python</span><span>NLP</span><span>AI Screening</span><span>MSU
-                                                    HackThrone 2025</span>
-                                            </div> -->
+                                            <!-- <details class="tech-stack-details">
+                                                <summary class="tech-stack-summary">
+                                                    <span>View Tech Stack</span>
+                                                    <i class="las la-angle-down"></i>
+                                                </summary>
+                                                <div class="project-tags">
+                                                    <span>Python</span><span>NLP</span><span>AI Screening</span><span>MSU HackThrone 2025</span>
+                                                </div>
+                                            </details> -->
                                         </div>
                                         <h2><a href="https://github.com/shubham814026" target="_blank">Resume Ranker &
                                                 Screener <i class="las la-external-link-alt"
